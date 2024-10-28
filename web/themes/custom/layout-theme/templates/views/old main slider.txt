@@ -1,0 +1,24 @@
+<div class="col-lg-8">
+    <div class="owl-carousel owl-carousel-2 carousel-item-1 position-relative mb-3 mb-lg-0">
+        <div class="owl-stage-outer">
+            {{page.main_slider}}
+        </div>
+        <div class="owl-nav">
+            <div class="owl-prev">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </div>
+            <div class="owl-next">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4">
+    <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+        <h3 class="m-0">Categories</h3>
+        <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+    </div>
+    <div>
+        {{ page.categories }}
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_mail().
+ */
+function custom_contact_form_mail($key, &$message, $params) {
+  switch ($key) {
+    case 'contact_form_submission':
+      $message['subject'] = t('New message from @name', ['@name' => $params['name']]);
+      $message['body'][] = t("Name: @name", ['@name' => $params['name']]);
+      $message['body'][] = t("Email: @email", ['@email' => $params['email']]);
+      $message['body'][] = t("Message: @message", ['@message' => $params['message']]);
+      break;
+  }
+}

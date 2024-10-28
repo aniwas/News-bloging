@@ -1,0 +1,25 @@
+name: layout-theme
+type: theme
+'base theme': stable9
+starterkit: true
+core_version_requirement: ^8 || ^9 || ^10
+libraries:
+  - layout_theme/base
+regions:
+  logo: Logo 
+  top_image: Top image
+  navbar: Navbar
+  top_news_slider: Top news slider
+  main_slider: Main slider
+  categories: Categories
+  feature: Feature
+  business: Busness
+  technology: Technology
+  entertainment: Entertainment
+  sports: Sports
+  popular: Popular
+  tranding: Tranding
+  footer_one: Footer one
+  footer_two: Footer two
+  footer_three: Footer three
+  footer_four: Footer four
